@@ -9,7 +9,7 @@ var App = React.createClass({
 	
   //set the default props using getDefaultProps method
   getDefaultProps : function(){
-    return { text: 'I am a button' };
+    return { text: 'Click me' };
   },
   // Create click handler function
   handleClick: function () {
@@ -26,7 +26,7 @@ var App = React.createClass({
         <List type='Vegetable'>
           <li>Cauliflower</li>
         </List>
-        <Button talk = {this.handleClick} value={this.props.text}/>
+        <Button buttontext = {this.handleClick} value={this.props.text}/>
         </div>
       );
   }

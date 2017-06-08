@@ -7,8 +7,7 @@ var Button = React.createClass({
     return (
       <div>
       <h1>{this.props.value}</h1>
-      <ul>{this.props.children}</ul> 
-      <button onClick={this.props.talk}>
+      <button onClick={this.props.buttontext}>
         {this.props.value}
       </button>
       </div>

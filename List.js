@@ -4,7 +4,7 @@ import React from 'react';
 //Create List class. Here we have accessed properties using this.props and childrens using this.props.children
 var List = React.createClass({
   render: function () {
-    var titleText = 'Favorite ' + this.props.type;
+    var titleText = this.props.type;
     if (this.props.children instanceof Array) {
     	titleText += 's';
     }
